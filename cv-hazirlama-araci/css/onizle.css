@@ -1,0 +1,88 @@
+.onizle {
+  border: 2px solid black;
+  max-width: var(--main);
+  min-width: var(--main);
+  background-color: #dd2e2e;
+  display: flex;
+}
+
+.cvsolKolon {
+  background-color: #ad1a1a;
+  width: 20em;
+  max-height: var(--onizle);
+  margin-left: 1em;
+  padding-right: 1em;
+}
+
+.cvFoto {
+  border: 2px solid black;
+  border-radius: 150px;
+  text-align: center;
+  height: 300px;
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+
+.p {
+  margin-top: 45%;
+}
+
+.cvIletisim {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+.cvEgitim {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+.cvYetenekler {
+  margin-top: 2em;
+  margin-left: 1em;
+  margin-bottom: 3em;
+}
+
+ul {
+  margin-left: 2em;
+  margin-top: 10px;
+}
+
+.cvsagKolon {
+  width: 45em;
+  min-height: var(--onizle);
+  max-height: var(--onizle);
+}
+
+.cvadSoyad {
+  height: 10em;
+  align-items: center;
+  text-align: center;
+  background-color: #403c3c;
+  color: white;
+}
+
+.cvHakkimda {
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+.cvDeneyim {
+  margin-left: 1em;
+  margin-top: 3em;
+}
+
+.items {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.altCizgi {
+  border-bottom: solid;
+  color: black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}

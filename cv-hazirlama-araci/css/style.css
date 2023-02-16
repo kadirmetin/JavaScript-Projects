@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  border: 2px solid black;
+  display: inline-block;
+  min-width: var(--main);
+  max-width: var(--main);
+}
+
+.icerik {
+  display: inline-flex;
+  flex-flow: row wrap;
+}
+
+.baslik {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.metinIcerikleri {
+  border: 2px solid black;
+  min-width: var(--main);
+  max-width: var(--main);
+  background-color: #b0acac;
+}
+
+.bolumBaslik {
+  text-align: center;
+}
+
+.altBaslik {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-left: 25px;
+  margin-top: 2em;
+}
+
+.gorunus {
+  border: 2px solid black;
+  min-width: var(--main);
+  max-width: var(--main);
+  background-color: #d1d1d1;
+}
+
+#createBox1 label {
+  display: inline-block;
+  justify-content: space-between;
+  width: 110px;
+  margin-left: 25px;
+}
+
+#createBox1 input {
+  width: calc(100px);
+  margin-right: 25px;
+}
+
+#createBox2 label {
+  display: inline-block;
+  justify-content: space-between;
+  width: 110px;
+  margin-left: 25px;
+}
+
+#createBox2 input {
+  width: calc(100px);
+  margin-right: 25px;
+}
+
+label {
+  display: inline-block;
+  justify-content: space-between;
+  width: 110px;
+
+  margin-left: 25px;
+  margin-bottom: 5px;
+}
+
+input {
+  width: calc(100% - 200px);
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+textarea {
+  margin-right: 25px;
+}
+
+select {
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid;
+  color: black;
+  margin: 1em 0;
+  padding: 0;
+}

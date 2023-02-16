@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/onizle.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="baslik">
+        <h2>CV Hazırlama Aracı</h2>
+      </div>
+      <div class="icerik">
+        <div class="metinIcerikleri">
+          <div class="bolumBaslik">
+            <h3>Metin İçerikleri</h3>
+            <hr />
+          </div>
+          <div class="form1">
+            <p class="altBaslik">İsim Kutusu</p>
+            <label for="adSoyad">Ad Soyad: </label>
+            <input type="text" id="adSoyad" onkeyup="inputtanCek1()" />
+            <br />
+            <label for="unvan">Ünvan: </label>
+            <input type="text" id="unvan" onkeyup="inputtanCek2()" />
+            <br />
+            <p class="altBaslik">İletişim Bilgileri</p>
+            <label for="telefon">Telefon: </label>
+            <input type="number" id="telefon" onkeyup="inputtanCek3()" />
+            <br />
+            <label for="mail">Mail: </label>
+            <input type="text" id="mail" onkeyup="inputtanCek4()" />
+            <br />
+            <label for="web">Web: </label>
+            <input type="text" id="web" onkeyup="inputtanCek5()" />
+            <br />
+            <label for="adres">Adres: </label>
+            <textarea
+              id="adres"
+              rows="3"
+              cols="30"
+              onkeyup="inputtanCek6()"
+            ></textarea>
+            <br />
+            <br />
+            <p class="altBaslik">Eğitim Bilgileri</p>
+            <label for="aciklama">Açıklama: </label>
+            <textarea
+              id="egitim"
+              rows="3"
+              cols="30"
+              onkeyup="inputtanCek7()"
+            ></textarea>
+            <br />
+            <label for="okulSayisi">Okul Sayısı: </label>
+            <select id="okulSayisi" onchange="openBox1()">
+              <option value="">Seçiniz</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div id="createBox1"></div>
+            <br />
+            <p class="altBaslik">Yetenekler</p>
+            <label for="aciklama">Açıklama: </label>
+            <textarea
+              id="aciklamaYetenek"
+              rows="3"
+              cols="30"
+              onkeyup="inputtanCek8()"
+            ></textarea>
+            <br />
+            <label for="yetenekSayisi">Yetenek Sayısı: </label>
+            <select id="yetenekSayisi" onchange="openBox2()">
+              <option value="">Seçiniz</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+            </select>
+            <div id="createBox2"></div>
+            <br />
+            <p class="altBaslik">Hakkımda</p>
+            <label for="aciklama">Açıklama: </label>
+            <textarea
+              rows="3"
+              cols="30"
+              id="aciklamaHakkimda"
+              onkeyup="inputtanCek9()"
+            ></textarea>
+            <br />
+            <br />
+            <p class="altBaslik">İş Deneyimi</p>
+            <label for="aciklama">Açıklama: </label>
+            <textarea
+              id="aciklamaisDeneyimi"
+              rows="3"
+              cols="30"
+              onkeyup="inputtanCek10()"
+            ></textarea>
+            <br />
+          </div>
+        </div>
+        <div class="gorunus">
+          <div class="bolumBaslik">
+            <h3>Görünüş</h3>
+            <hr />
+          </div>
+          <div class="form2">
+            <p class="altBaslik">Renkler</p>
+            <label for="arkaplanRenk">Arkaplan Rengi: </label>
+            <input
+              type="color"
+              id="arkaplanRenk"
+              value="#DD2E2E"
+              onchange="inputtanCek11()"
+            />
+            <br />
+            <label for="solkolonRenk">Sol Kolon Rengi: </label>
+            <input
+              type="color"
+              id="solkolonRenk"
+              value="#AD1A1A"
+              onchange="inputtanCek12()"
+            />
+            <br />
+            <label for="isimkutusuRenk">İsim Kutusu Rengi: </label>
+            <input
+              type="color"
+              id="isimkutusuRenk"
+              value="#383838"
+              onchange="inputtanCek13()"
+            />
+            <br />
+            <label for="isimkutusuyaziRenk">İsim Kutusu Yazı Rengi: </label>
+            <input
+              type="color"
+              id="isimkutusuyaziRenk"
+              value="#FFFFFF"
+              onchange="inputtanCek14()"
+            />
+            <br />
+            <p class="altBaslik">Yazı Tipi</p>
+            <label for="yaziTipi">Yazı Tipi: </label>
+            <select id="fontSelect" onchange="fontPick()">
+              <option value="">Seçiniz</option>
+              <option value="1">Times New Roman</option>
+              <option value="2">Courier New</option>
+              <option value="3">Lucida HandWriting</option>
+            </select>
+            <br />
+            <p class="altBaslik">Fotoğraf</p>
+            <label for="yaziTipi">Fotoğraf Çerçevesi Şekli: </label>
+            <select id="shapeSelect" onchange="shapePick()">
+              <option value="">Seçiniz</option>
+              <option value="1">Köşeli</option>
+              <option value="2">Oval</option>
+              <option value="3">Yuvarlak</option>
+            </select>
+            <br />
+            <p class="altBaslik">Başlık Altı Çizgileri</p>
+            <label for="cizgiRenk">Çizgi Rengi: </label>
+            <input type="color" id="cizgiRenk" onchange="inputtanCek16()" />
+            <br />
+            <label for="cizgiSekli">Çizgi Şekli: </label>
+            <select id="cizgiSekli" onchange="lineShapePick()">
+              <option value="">Seçiniz</option>
+              <option value="1">Noktalı</option>
+              <option value="2">Çizgili</option>
+              <option value="3">Düz</option>
+            </select>
+            <br />
+          </div>
+        </div>
+        <div class="onizle" id="onizle">
+          <div class="cvsolKolon" id="cvsolKolon">
+            <br />
+            <div class="cvFoto" id="cvFoto">
+              <p class="p">FOTOĞRAF</p>
+            </div>
+            <div class="cvIletisim">
+              <h2>İletişim</h2>
+              <div class="altCizgi"></div>
+              <ul>
+                <li id="cvTelefon">Telefon</li>
+                <li id="cvMail">Mail</li>
+                <li id="cvWeb">Web</li>
+                <li id="cvAdres">Adres</li>
+              </ul>
+            </div>
+            <div class="cvEgitim">
+              <h2>Eğitim</h2>
+              <div class="altCizgi"></div>
+              <p id="cvEgitim">AÇIKLAMA</p>
+              <div id="cvEgitimList1"></div>
+              <div id="cvEgitimList2"></div>
+              <div id="cvEgitimList3"></div>
+            </div>
+            <div class="cvYetenekler">
+              <h2>Yetenekler</h2>
+              <div class="altCizgi"></div>
+              <p id="cvYetenek">AÇIKLAMA</p>
+              <br />
+              <div id="cvYetenekList1"></div>
+              <div id="cvYetenekList2"></div>
+              <div id="cvYetenekList3"></div>
+            </div>
+          </div>
+          <div class="cvsagKolon">
+            <div class="cvadSoyad" id="cvadSoyad">
+              <div class="items">
+                <br />
+                <h1 id="cvadSoyad1">Ad Soyad</h1>
+                <div class="altCizgi"></div>
+                <h3 id="cvUnvan">Ünvan</h3>
+              </div>
+            </div>
+            <div class="cvHakkimda">
+              <h2>Hakkımda</h2>
+              <div class="altCizgi"></div>
+              <p id="cvaciklamaHakkimda">AÇIKLAMA</p>
+            </div>
+            <div class="cvDeneyim">
+              <h2>İş Deneyimi</h2>
+              <div class="altCizgi"></div>
+              <p id="cvaciklamaisDeneyimi">AÇIKLAMA</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
