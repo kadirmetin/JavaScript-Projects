@@ -2,4 +2,4 @@
 Javascript tabanıyla yapılmış bölümlere göre puan hesaplayıcı.
 
 ## Canlı önizleme
-[Try it on CodeSandbox](https://9db1j9.csb.app/)
+[Try it on CodePen](https://codepen.io/kadirmetin/full/abazMGd/)
