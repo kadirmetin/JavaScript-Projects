@@ -1,2 +1,2 @@
-# JS Bölüme Göre Puan Hesaplayıcı
-jS tabanıyla yapılmış bölüme göre puan hesaplayıcı
+# Bölüme Göre Puan Hesaplayıcı
+Javascript tabanıyla yapılmış bölümlere göre puan hesaplayıcı.
