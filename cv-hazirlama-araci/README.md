@@ -2,4 +2,4 @@
 Javascript tabanıyla hazırlanmış, özelliştirmeler yapabildiğiniz CV hazırlama aracı.
 
 ## Canlı önizleme
-[Try it on CodePen](https://codepen.io/kadirmetin/full/dyqPLMJ/)
+[Try it on CodePen](https://1196822.playcode.io/)
