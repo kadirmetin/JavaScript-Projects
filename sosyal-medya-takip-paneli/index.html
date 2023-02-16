@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/js/i18n/datepicker.en.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="main">
+        <div class="solKolon">
+          <div class="solKolonUst">
+            <i class="fa-solid fa-eye fa-2xl"></i>
+          </div>
+          <div class="solKolonOrta">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <i class="fa-solid fa-satellite-dish"></i>
+            <i class="fa-sharp fa-solid fa-calendar"></i>
+            <i class="fa-solid fa-sliders"></i>
+            <i class="fa-regular fa-comments"></i>
+          </div>
+          <div class="solKolonAlt">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          </div>
+        </div>
+        <div class="ortaKolon">
+          <div class="ortaUst">
+            <div class="ustList">
+              <i class="fa-solid fa-table-list"></i>
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="ustDay">
+              <select class="dayChoose" disabled>
+                <option selected>LAST 15 DAYS</option>
+              </select>
+            </div>
+          </div>
+          <div class="ortaStatic">
+            <div class="card1">
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+              <h1>280K</h1>
+              <p>Followers</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="card2">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+              <h1>680K</h1>
+              <p>Followers</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="card3">
+              <i class="fa-brands fa-youtube fa-2xl"></i>
+              <h1>2.3M</h1>
+              <p>Followers</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+            <div class="card4">
+              <i class="fa-brands fa-instagram fa-2xl"></i>
+              <h1>50K</h1>
+              <p>Followers</p>
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+          <div class="ortaChart">
+            <b>Instagram Subscribers</b>
+            <canvas
+              id="myChart"
+              width="400"
+              height="100"
+              aria-label="Hello ARIA World"
+              role="img"
+            ></canvas>
+          </div>
+          <div class="ortaAlt">
+            <div class="altMetric">
+              <b>Key Metrics</b>
+              <p>Clicks <span style="float: right">10k</span></p>
+              <hr />
+              <p>Likes <span style="float: right">580</span></p>
+              <hr />
+              <p>Followers <span style="float: right">8k</span></p>
+              <hr />
+              <p>Impessions <span style="float: right">5500</span></p>
+            </div>
+            <div class="altUsers">
+              <b>Engaged Users</b>
+              <h2>12.2k</h2>
+              <i class="fa-solid fa-angles-up"> 19%</i>
+            </div>
+            <div class="altUsers">
+              <b>Page Impessions</b>
+              <h2>8.6k</h2>
+              <i class="fa-solid fa-angles-down"> 9%</i>
+            </div>
+          </div>
+        </div>
+        <div class="sagKolon">
+          <div class="sagUst">
+            <i class="fa-regular fa-bell"></i>
+            <div class="bildirim">
+              <i class="fa-solid fa-gift"></i>
+              <p>2 New updates</p>
+            </div>
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <div class="sagOrta">
+            <img src="./images/scrum-svg.svg" alt="" />
+          </div>
+          <input type="text" id="datePicker" data-language="en" hidden="" />
+          <div class="hiBox">
+            <p>🤘🏼 Say Hi to <b>Laith Hart</b></p>
+            <img src="./images/men.png" alt="" />
+          </div>
+          <div class="hiBox">
+            <p>🤘🏼 Say Hi to <b>Sidney Dyer</b></p>
+            <img src="./images/woman.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./js/myChart.js"></script>
+    <script>
+      $("#datePicker").datepicker({
+        inline: true,
+      });
+    </script>
+  </body>
+</html>
