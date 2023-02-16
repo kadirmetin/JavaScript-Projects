@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alan ve Çevre Hesaplayıcı</title>
+</head>
+
+<body>
+  <form id="myForm" onsubmit="validateform(event)">
+    <p>Alan ve çevresi hesaplanacak dikdörtgen için:</p>
+    <label for="kisaKenar">Kısa kenar: </label>
+    <input type="number" id="kisaKenar" name="kisaKenar" />
+    <br />
+    <br />
+    <label for="uzunKenar">Uzun Kenar: </label>
+    <input type="number" id="uzunKenar" name="uzunKenar" />
+    <br />
+    <br />
+    <input type="submit" id="veriGonder" value="Hesapla" />
+    <br />
+    <br />
+    <label for="Alan">Alan: </label>
+    <input type="text" id="Alan" disabled />
+    <br />
+    <br />
+    <label for="Cevre">Çevre: </label>
+    <input type="text" id="Cevre" disabled />
+  </form>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

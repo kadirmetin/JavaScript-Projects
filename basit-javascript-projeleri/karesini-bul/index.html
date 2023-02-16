@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Karesini Bul</title>
+</head>
+
+<body>
+  <form id="myForm" onsubmit="return validateForm(event)">
+    <label for="sayi">Sayı: </label>
+    <input type="number" id="sayi" name="sayi" />
+    <br />
+    <br />
+    <input type="submit" value="Hesapla" />
+    <br />
+    <br />
+    <label for="karesi">Karesi: </label>
+    <input type="text" id="karesi" disabled />
+  </form>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

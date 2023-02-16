@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sayısal Loto</title>
+  <style>
+    input[type="number"] {
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Sayısal Loto Oyunu</h2>
+  <p>Aşağıdaki inputlara tahminlerinizi giriniz;</p>
+
+  <form onsubmit="tahminGir(event)">
+    <input type="number" name="tahmin1" id="tahmin1" />
+    <input type="number" name="tahmin2" id="tahmin2" />
+    <input type="number" name="tahmin3" id="tahmin3" />
+    <input type="number" name="tahmin4" id="tahmin4" />
+    <input type="number" name="tahmin5" id="tahmin5" />
+    <input type="number" name="tahmin6" id="tahmin6" />
+    <input type="submit" id="tahminBtn" value="Tahmin Gir" />
+  </form>
+
+  <br />
+  <span id="tahminlerGirildi"></span>
+  <hr />
+  <button id="kurayiCek" disabled>Kurayı Çek</button>
+  <br />
+
+  <h3>Loto Sayıları</h3>
+
+  <form id="kuraSonuclari">
+    <input type="number" name="girilenTahmin1" id="girilenTahmin1" disabled readonly />
+    <input type="number" name="girilenTahmin2" id="girilenTahmin2" disabled readonly />
+    <input type="number" name="girilenTahmin3" id="girilenTahmin3" disabled readonly />
+    <input type="number" name="girilenTahmin4" id="girilenTahmin4" disabled readonly />
+    <input type="number" name="girilenTahmin5" id="girilenTahmin5" disabled readonly />
+    <input type="number" name="girilenTahmin6" id="girilenTahmin6" disabled readonly />
+  </form>
+
+  <span id="bilinenSayi"></span>
+  <br />
+  <span id="adet"></span>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

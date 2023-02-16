@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rastgele Sayı Üretici</title>
+</head>
+
+<body>
+  <div>
+    <label for="size">Minimum Değer: </label>
+    <input name="minValue" id="minValue" type="range" min="0" max="100" value="50" />
+    <button id="btn1">Seç</button>
+    <input type="text" id="minBox" disabled />
+    <br /><br />
+    <label for="size">Maksimum Değer: </label>
+    <input name="maxValue" id="maxValue" type="range" min="0" max="100" value="50" />
+    <button id="btn2">Seç</button>
+    <input type="text" id="maxBox" disabled />
+    <br /><br />
+    <button id="submit">Üret</button>
+    <hr />
+  </div>
+  <p>Rastgele Sayı: <span id="rastgeleSayi"></span></p>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

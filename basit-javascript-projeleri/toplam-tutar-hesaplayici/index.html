@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toplam Tutar Hesaplayıcı</title>
+  </head>
+  <body>
+    <form id="myForm" onsubmit="return validateForm()">
+      <label for="birimFiyat">Birim fiyatı: </label>
+      <input type="number" id="birimFiyat" name="birimFiyat" />
+      <br />
+      <br />
+      <label for="adet">Adet: </label>
+      <input type="number" id="adet" name="adet" />
+      <br />
+      <br />
+      <input type="submit" value="Hesapla" />
+      <br />
+      <br />
+      <label for="toplamTutar">Toplam tutar: </label>
+      <input type="number" id="toplamTutar" disabled />
+    </form>
+    <script src="/js/script.js"></script>
+  </body>
+</html>

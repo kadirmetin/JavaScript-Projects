@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kar Hesaplayıcı</title>
+</head>
+
+<body>
+  <form id="myForm" onsubmit="return validateform(event)">
+    <label for="fiyat">Fiyatını girin: </label>
+    <input type="number" id="fiyat" name="fiyat" />
+    <br />
+    <br />
+    <label for="kar">Kar oranını girin: </label>
+    <input type="number" id="kar" name="kar" />
+    <br />
+    <br />
+    <input type="submit" id="veriGonder" value="Hesapla" />
+    <br />
+    <br />
+    <label for="satisFiyati">Satış Fiyatı: </label>
+    <input type="text" id="satisFiyati" disabled />
+  </form>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

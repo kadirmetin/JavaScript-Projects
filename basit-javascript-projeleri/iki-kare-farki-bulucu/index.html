@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İki Kare Farkı Bulucu</title>
+</head>
+
+<body>
+  <form id="myForm" onsubmit="return validateForm(event)">
+    <label for="x">X :</label>
+    <input type="number" id="x" name="x" />
+    <br />
+    <br />
+    <label for="y">Y :</label>
+    <input type="number" id="y" name="y" />
+    <br />
+    <br />
+    <input type="submit" value="Hesapla" />
+    <br />
+    <br />
+    <label for="kareFarki">X ve Y değerlerinin kareleri farkı: </label>
+    <input type="text" id="kareFarki" disabled />
+  </form>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

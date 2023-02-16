@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tshirt Sipariş Aracı</title>
+</head>
+<style>
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+</style>
+
+<body>
+  <h1>Kişiye Özel Tişört Sipariş Aracı</h1>
+  <hr />
+  <p>
+    Lütfen oluşturmak istediğiniz siparişe ilişkin aşağıdaki bilgileri
+    doldurunuz;
+  </p>
+  <form onsubmit="return handleSubmit(event)">
+    <h2>Kişisel Bilgiler</h2>
+    <label for="name">Adınız: </label>
+    <input type="text" id="name" name="name" />
+    <br />
+    <label for="surName">Soyadınız: </label>
+    <input type="text" id="surName" name="surName" />
+    <br />
+    <label for="birthday">Doğum Tarihiniz: </label>
+    <input type="date" id="birthday" name="birthday" />
+    <br />
+    <label for="mail">Mail Adresiniz: </label>
+    <input type="text" name="mail" id="mail" />
+    <br />
+    <label for="phone">Telefon: </label>
+    <input type="tel" id="phone" name="phone" placeholder="5XX-XXX-XXXX" />
+    <br />
+    <br />
+    <h2>Sipariş Bilgileri</h2>
+    <label for="colorTshirt">Tişört Rengi: </label>
+    <input type="color" name="colorTshirt" id="colorTshirt" />
+    <br />
+    <label for="colorText">Yazı Rengi: </label>
+    <input type="color" name="colorText" id="colorText" />
+    <br />
+    <label for="tshirtText">Tişört üzerinde yazacak yazıyı girin: </label>
+    <input type="text" name="tshirtText" id="tshirtText" />
+    <br />
+    <label for="tshirtNumber">Tişört Adeti: </label>
+    <input type="number" name="tshirtNumber" id="tshirtNumber" />
+    <br />
+    <label for="size">Beden Seçiniz: </label>
+    <input name="sizeChooser" id="sizeChooser" type="range" value="40" step="20" list="tickmarks" />
+    <datalist id="tickmarks">
+      <option value="0"></option>
+      <option value="20"></option>
+      <option value="40"></option>
+      <option value="60"></option>
+      <option value="80"></option>
+      <option value="100"></option>
+    </datalist>
+    <br />
+    <input type="button" onclick="numToText()" value="Seç" />
+    <input type="text" id="sizePointer" disabled autocomplete="off" />
+    <br />
+    <br />
+    <h2>Teslimat Bilgileri</h2>
+    <label for="address">Adres: </label>
+    <input type="text" id="address" name="address" />
+    <br />
+    <label for="deliveryTime">Teslim tarihi için bir aralık seçiniz: </label>
+    <input type="week" id="deliveryTime" name="deliveryTime" />
+    <br />
+    <br />
+    <h2>Ödeme Bilgileri</h2>
+    <label for="nameSurname">Ad Soyad: </label>
+    <input type="text" name="nameSurname" id="nameSurname" />
+    <br />
+    <label for="cardNumber">Kart Numarası</label>
+    <input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19"
+      placeholder="XXXX-XXXX-XXXX-XXXX" />
+    <br />
+    <label for="expDate">Son Kullanma Tarihi: </label>
+    <input type="month" id="expDate" name="expDate" />
+    <br />
+    <label for="cvv">CVV: </label>
+    <input type="number" id="cvv" name="cvv" />
+    <br />
+    <br />
+    <input type="submit" value="Onayla" />
+  </form>
+  <br />
+  <br />
+
+  <table id="table"></table>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
